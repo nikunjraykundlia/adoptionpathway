@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -5,6 +6,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import RescueTracker from "./pages/RescueTracker";
+import Adoption from "./pages/Adoption";
+import Community from "./pages/Community";
+import LawsHelplines from "./pages/LawsHelplines";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +21,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/rescue-tracker" element={<RescueTracker />} />
+          <Route path="/adoption" element={<Adoption />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/laws-helplines" element={<LawsHelplines />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

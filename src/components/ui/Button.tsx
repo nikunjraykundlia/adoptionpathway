@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Button as ShadcnButton, ButtonProps as ShadcnButtonProps } from "@/components/ui/button";
+import { Button as ShadcnButton, type ButtonProps as ShadcnButtonProps } from "@/components/ui/button";
 import { cn } from '@/lib/utils';
 
 interface ButtonProps extends ShadcnButtonProps {
