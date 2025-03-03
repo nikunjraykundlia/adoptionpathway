@@ -1,8 +1,7 @@
 
 import React from 'react';
-import { Button as ShadcnButton } from '@/components/ui/button';
+import { Button as ShadcnButton, ButtonProps as ShadcnButtonProps } from "@/components/ui/button";
 import { cn } from '@/lib/utils';
-import { ButtonProps as ShadcnButtonProps } from '@/components/ui/button';
 
 interface ButtonProps extends ShadcnButtonProps {
   isAnimated?: boolean;
