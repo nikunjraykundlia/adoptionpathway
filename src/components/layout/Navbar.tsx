@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
-import { Menu, X, Heart, Paw, BellRing, User } from 'lucide-react';
+import { Menu, X, Heart, PawPrint, BellRing, User } from 'lucide-react';
 import Button from '@/components/ui/Button';
 
 const navItems = [
@@ -49,7 +49,7 @@ const Navbar = () => {
             to="/"
             className="flex items-center space-x-2 text-pawcare-blue font-semibold text-xl"
           >
-            <Paw className="h-6 w-6" />
+            <PawPrint className="h-6 w-6" />
             <span className="animate-fade-in">PawCare</span>
           </Link>
 

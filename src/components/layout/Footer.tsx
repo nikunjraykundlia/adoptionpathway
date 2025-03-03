@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Paw, Facebook, Twitter, Instagram, Mail, Heart } from 'lucide-react';
+import { PawPrint, Facebook, Twitter, Instagram, Mail, Heart } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const footerLinks = [
@@ -45,7 +44,7 @@ const Footer = () => {
           {/* Logo and About */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 text-pawcare-blue mb-4">
-              <Paw className="h-7 w-7" />
+              <PawPrint className="h-7 w-7" />
               <span className="text-xl font-semibold">PawCare</span>
             </Link>
             <p className="text-foreground/80 mb-6 max-w-md">
